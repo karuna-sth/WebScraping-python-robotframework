@@ -4,17 +4,17 @@ This module provides funcitonality to connect to database
 
 import sqlite3
 import pandas as pd
+import constants
 
 
 class DatabaseOperation:
     """Connects to a database"""
 
-    def __init__(self, database: str) -> None:
+    def __init__(self, data) -> None:
         self.conn = None
         self.cursor = None
-        self.database = database
-        self.connect_to_db()
-        self.create_table()
+        self.database = constants.DATABASE
+        self.data = data
 
     def connect_to_db(self) -> None:
         """connects to db"""
@@ -40,8 +40,10 @@ class DatabaseOperation:
                 id INTEGER PRIMARY KEY AUTOINCREMENT, 
                 movie_name TEXT NOT NULL, 
                 tomatometer_score TEXT, 
+                tomatometer_state TEXT,
                 audience_score TEXT, 
-                storyline TEXT, rating TEXT, 
+                storyline TEXT, 
+                rating TEXT, 
                 genres TEXT, 
                 review_1 TEXT, 
                 review_2 TEXT, 
@@ -53,10 +55,21 @@ class DatabaseOperation:
         self.cursor.execute(query)
         self.conn.commit()
 
-    def insert_excel_to_database(self, data: pd.DataFrame) -> None:
+    def insert_to_database(self, data: pd.DataFrame) -> None:
         """insert data generated from excel to database
 
         Args:
             file_path (str): path to excel file
         """
         data.to_sql("Movies", self.conn, if_exists="append", index=False)
+
+    def perform_op(self) -> None:
+        """perform databse operation CREATE UPDATE INSERT and DELETE ONLY
+
+        Args:
+            data (dataframe): data frame to inserted
+        """
+        self.connect_to_db()
+        self.create_table()
+        self.insert_to_database(self.data)
+        self.close_connection()

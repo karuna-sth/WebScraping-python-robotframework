@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on linux)" generated="20230513 00:59:30.613" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="/home/karx/Documents/Internship-task/web-scraping/tasks.robot">
+<test id="s1-t1" name="Minimal task" line="6">
+<kw name="Main" library="app">
+<doc>main function where execution starts</doc>
+<msg timestamp="20230513 00:59:33.138" level="INFO">Opening browser 'chrome' to base url 'https://www.rottentomatoes.com/'.</msg>
+<msg timestamp="20230513 00:59:33.157" level="INFO">Executing: /home/karx/.robocorp/holotree/e991705_b1f3c24_09529949/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json</msg>
+<msg timestamp="20230513 00:59:47.521" level="INFO">Typing text 'The Matrix' into text field '//*[@id="header-main"]/search-algolia/search-algolia-controls/input'.</msg>
+<msg timestamp="20230513 00:59:49.171" level="INFO">Clicking element '//*[@id="header-main"]/search-algolia/search-algolia-controls/a'.</msg>
+<msg timestamp="20230513 00:59:52.831" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
+<msg timestamp="20230513 00:59:53.888" level="INFO">Opening url 'https://www.rottentomatoes.com/m/matrix'</msg>
+<msg timestamp="20230513 00:59:59.370" level="INFO">[&lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="1dd4f460-6333-4a15-9cf8-b8f4ad6af540")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="40b2d8a6-6f4e-4c40-9ba4-29821c833255")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="628e9636-8e00-4add-93c5-b6581a16c7fe")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="886ec849-630a-4b4f-9503-f0d2636c6e51")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="05bc7e40-e706-4407-992f-05d6b9fc368f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="da5da16c-2b46-4623-877d-d519b0846cfa")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="252d2f5e-60b4-424f-ab6c-4d46a53eed96")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="855c1f7b-7473-4bb9-9002-4610da987f5c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="1b910917-1cc2-4776-bb40-aae16ee850ca")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="d69f6910-92de-42d4-9c5f-3f850da924bb")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="d23f1835-175f-458e-9b1d-dfc05940994c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="e8c01c77-9f42-4d6d-b7da-174466c3b96a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="856e47d1-3e6c-44a8-ada5-c591aa02edee")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="65a8c03c-bf1c-4f38-90cd-34f1968616da")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="b68d4e84-e322-437b-ab52-999a3071a98f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="0069fbab-3417-46ce-9300-32a2904511a3")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="df993e6c-f92d-4946-82ae-2f1e0409098b")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="080ebc69-871b-4202-8a50-2d522d8786b8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="c3da1801-f33c-4c8b-9ab6-fe7d11e917f7")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="89568b92b36127c6ee83940eb657d97d", element="ebbec6f4-2c07-4c80-a13b-d71ce98bd64f")&gt;]
+88
+85
+certified-fresh Neo (Keanu Reeves) believes that Morpheus (Laurence Fishburne), an elusive figure considered to be the most dangerous man alive, can answer his question -- What is the Matrix? Neo is contacted by Trinity (Carrie-Anne Moss), a beautiful stranger who leads him into an underworld where he meets Morpheus. They fight a brutal battle for their lives against a cadre of viciously intelligent secret agents. It is a truth that could cost Neo something more precious than his life. R (Sci-Fi Violence|Brief Language)
+['The Matrix does a good job of repackaging Baudrillard’s critique of hyperreality, as well as riffing on Christ, Marx, Lewis Carroll, and L. Frank Baum.', 'The Matrix still stands up as a fiercely exciting and discombobulating futurist drama, which pioneered breathtaking "bullet-time" action sequences inspired by Asian martial arts.', "Neo offers Reeves the perfect combination of Ted Theodore Logan's curiosity and wonder, Johnny Utah's earnestness and the badassedness of Jack Traven.", 'A technologically stunning movie that furthers the genre and features crowd-pleasing performances to go with the frequent scenes of gunplay and violence.', "Extremely violent, extremely preposterous, extremely entertaining, The Matrix succeeds at two extremely difficult tasks: as a vast, exciting virtual-reality movie and as a defibrillator for Keanu Reeves' big screen career."]
+   movie_name tomatometer_score  ...                                           review_5   status
+0  The Matrix                88  ...  Extremely violent, extremely preposterous, ext...  Success
+
+[1 rows x 13 columns]</msg>
+<status status="PASS" starttime="20230513 00:59:32.439" endtime="20230513 00:59:59.371"/>
+</kw>
+<status status="PASS" starttime="20230513 00:59:32.437" endtime="20230513 00:59:59.372"/>
+</test>
+<doc>Template robot main suite.</doc>
+<status status="PASS" starttime="20230513 00:59:30.622" endtime="20230513 00:59:59.375"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
