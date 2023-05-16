@@ -23,8 +23,12 @@ class DatabaseOperation:
 
     def close_connection(self) -> None:
         """closes connection"""
-        if self.conn:
-            self.conn.close()
+        try:
+            if self.conn:
+                self.conn.close()
+        except Exception as ex:
+            print(ex)
+            
 
     def create_table(self) -> None:
         """execute sql query for create, update, delete, insert
@@ -58,5 +62,8 @@ class DatabaseOperation:
         Args:
             file_path (str): path to excel file
         """
-        data.to_sql("Movies", self.conn, if_exists="append", index=False)
+        try:
+            data.to_sql("Movies", self.conn, if_exists="append", index=False)
+        except Exception as ex:
+            print(ex)
 
