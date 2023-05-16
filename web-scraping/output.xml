@@ -1,56 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on linux)" generated="20230514 07:23:10.596" rpa="true" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on linux)" generated="20230516 09:52:36.761" rpa="true" schemaversion="3">
 <suite id="s1" name="Tasks" source="/home/karx/Documents/Internship-task/web-scraping/tasks.robot">
 <test id="s1-t1" name="Minimal task" line="6">
 <kw name="Main" library="app">
 <doc>main function where execution starts</doc>
-<msg timestamp="20230514 07:23:13.422" level="INFO">Opening browser 'chrome' to base url 'https://www.rottentomatoes.com/'.</msg>
-<msg timestamp="20230514 07:23:13.425" level="INFO">Executing: /home/karx/.robocorp/holotree/e991705_b1f3c24_09529949/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json</msg>
-<msg timestamp="20230514 07:24:29.293" level="INFO">Typing text 'The Matrix' into text field '//*[@id="header-main"]/search-algolia/search-algolia-controls/input'.</msg>
-<msg timestamp="20230514 07:24:33.905" level="INFO">Clicking element '//*[@id="header-main"]/search-algolia/search-algolia-controls/a'.</msg>
-<msg timestamp="20230514 07:24:39.329" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
-<msg timestamp="20230514 07:24:40.563" level="INFO">Opening url 'https://www.rottentomatoes.com/m/matrix'</msg>
-<msg timestamp="20230514 07:24:59.010" level="INFO">Typing text 'Titanic' into text field '//*[@id="header-main"]/search-algolia/search-algolia-controls/input'.</msg>
-<msg timestamp="20230514 07:25:00.899" level="INFO">Clicking element '//*[@id="header-main"]/search-algolia/search-algolia-controls/a'.</msg>
-<msg timestamp="20230514 07:25:06.065" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
-<msg timestamp="20230514 07:25:06.963" level="INFO">Opening url 'https://www.rottentomatoes.com/m/titanic_2012'</msg>
-<msg timestamp="20230514 07:25:14.867" level="INFO">Typing text 'Jumanji' into text field '//*[@id="header-main"]/search-algolia/search-algolia-controls/input'.</msg>
-<msg timestamp="20230514 07:25:16.101" level="INFO">Clicking element '//*[@id="header-main"]/search-algolia/search-algolia-controls/a'.</msg>
-<msg timestamp="20230514 07:25:19.200" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
-<msg timestamp="20230514 07:25:20.037" level="INFO">Opening url 'https://www.rottentomatoes.com/m/1068044-jumanji'</msg>
-<msg timestamp="20230514 07:25:28.572" level="INFO">Typing text 'The Night Train to Kathmandu' into text field '//*[@id="header-main"]/search-algolia/search-algolia-controls/input'.</msg>
-<msg timestamp="20230514 07:25:29.922" level="INFO">Clicking element '//*[@id="header-main"]/search-algolia/search-algolia-controls/a'.</msg>
-<msg timestamp="20230514 07:25:32.731" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
-<msg timestamp="20230514 07:25:33.327" level="INFO">Opening url 'https://www.rottentomatoes.com/m/the-night-train-to-kathmandu'</msg>
-<msg timestamp="20230514 07:25:39.674" level="INFO">Typing text 'Sta' into text field '//*[@id="header-main"]/search-algolia/search-algolia-controls/input'.</msg>
-<msg timestamp="20230514 07:25:40.900" level="INFO">Clicking element '//*[@id="header-main"]/search-algolia/search-algolia-controls/a'.</msg>
-<msg timestamp="20230514 07:25:44.841" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
-<msg timestamp="20230514 07:25:48.477" level="INFO">Typing text 'Beyond the Dream' into text field '//*[@id="header-main"]/search-algolia/search-algolia-controls/input'.</msg>
-<msg timestamp="20230514 07:25:49.728" level="INFO">Clicking element '//*[@id="header-main"]/search-algolia/search-algolia-controls/a'.</msg>
-<msg timestamp="20230514 07:25:52.820" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
-<msg timestamp="20230514 07:25:54.187" level="INFO">Opening url 'https://www.rottentomatoes.com/m/beyond_the_dream_2022'</msg>
-<msg timestamp="20230514 07:25:59.547" level="INFO">Movie
+<msg timestamp="20230516 09:52:40.799" level="INFO">Opening browser 'chrome' to base url 'https://www.rottentomatoes.com/search?search='.</msg>
+<msg timestamp="20230516 09:52:40.815" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230516 09:52:48.790" level="INFO">Opening url 'https://www.rottentomatoes.com/search?search=The Matrix'</msg>
+<msg timestamp="20230516 09:52:51.488" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
+<msg timestamp="20230516 09:52:52.264" level="INFO">Opening url 'https://www.rottentomatoes.com/m/matrix'</msg>
+<msg timestamp="20230516 09:52:56.978" level="INFO">Opening url 'https://www.rottentomatoes.com/search?search=Titanic'</msg>
+<msg timestamp="20230516 09:52:59.970" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
+<msg timestamp="20230516 09:53:00.416" level="INFO">Opening url 'https://www.rottentomatoes.com/m/titanic_2012'</msg>
+<msg timestamp="20230516 09:53:05.019" level="INFO">Opening url 'https://www.rottentomatoes.com/search?search=Jumanji'</msg>
+<msg timestamp="20230516 09:53:07.430" level="INFO">Clicking element '//li[@data-filter='movie']'.</msg>
+<msg timestamp="20230516 09:53:07.879" level="INFO">Opening url 'https://www.rottentomatoes.com/m/1068044-jumanji'</msg>
+<msg timestamp="20230516 09:53:09.485" level="INFO">Opening url 'https://www.rottentomatoes.com/search?search=The Night Train to Kathmandu'</msg>
+<msg timestamp="20230516 09:53:09.499" level="INFO">Opening url 'https://www.rottentomatoes.com/search?search=skhgfkjs'</msg>
+<msg timestamp="20230516 09:53:09.515" level="INFO">Opening url 'https://www.rottentomatoes.com/search?search=Beyond the Dream'</msg>
+<msg timestamp="20230516 09:53:09.524" level="INFO">Movie
 0                    The Matrix
 1                       Titanic
 2                       Jumanji
 3  The Night Train to Kathmandu
-4                           Sta
+4                      skhgfkjs
 5              Beyond the Dream
 The Matrix
-[&lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="98695bd8-6b71-45d7-bc4a-c7cf5679b831")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="67f66786-fae5-428d-870c-01369d29caae")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="92c43641-e1bb-4257-afbc-f8c6a1f747cd")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="3bdd9880-0bde-42d2-a754-ad9f91b214a2")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="57c61a1e-31d3-4b68-a100-3b1cb7c85357")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="39ea75e5-297a-45c8-95c4-5d19155a6562")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="0d1dfd85-63a5-45a8-bc7d-8936d5034341")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="4c1a4795-82bb-4989-bfbf-0834c7c291bf")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="bd9db72c-d616-420d-9158-068a768a7e6e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="786b33f5-8e9a-4e0a-b676-0f42196e853d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="33fb16f8-1868-42cd-a65d-a60d31218108")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="44531ad6-1101-4fc9-a765-ea6c9f42e93d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="3b97f38e-7e84-4f2a-92d7-0b01bccd6fcf")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="3e92f5c3-59ec-40e5-97e1-ff9486c425e9")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="35d334a5-b2f2-4247-8def-81eae74f9424")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="176e4f2a-4247-4590-99be-e9934537f8ee")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="7429db39-961b-4cf0-9ac9-a7d2d9e92628")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="50318d00-6e19-4884-9d4a-e104f523a47d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="eb20bf87-78cb-468c-b6fc-590eb5e9c12c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="b14622c6-85bf-45d5-a89b-f1d0e6217ca1")&gt;]
+[&lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="a328ee0d-447b-4f6a-921a-4a966d86a2c0")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="6db168d1-86c1-4f21-b673-c3febcf7fca0")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="adadaafe-1a06-43ed-9983-77515a3352ba")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="3066bc14-8bf4-4835-902a-bff33116a026")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="a90964d4-08a5-4be9-b797-8dd2ca5531e8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="77ace981-f86b-4c75-9458-2ce13894f80e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="cde1ab93-df79-413c-8f87-807036a5d586")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="410d2cae-a32c-4706-9b7c-8e19b82b561f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="ea6bbff0-ab60-466b-b74c-e66b72728c17")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="02052bf3-713f-41c7-8e40-4c1897ee52ac")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="7889ed88-51e1-4252-85a7-ce81d5b2c659")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="c0ab40be-4482-474d-baa7-e63563309035")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="d4b9f892-019c-4b07-b421-11c6f93da128")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="a2e7bb38-eb04-4f42-9557-11e97b28785f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="7c1d3159-7437-4553-8b4a-d52ae4ee0205")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="f68ec521-bf81-4c83-bff3-abe0d7b4229a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="8343d2ba-fb6a-40c8-84bf-322fe1c2a372")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="ae523556-e857-4dbe-ab5a-953eacf6d9fb")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="5325895c-a93c-4645-bbe6-e9532d202742")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="31f23911-44a1-46d8-912e-df79408756b9")&gt;]
 88
 85
-certified-fresh Neo (Keanu Reeves) believes that Morpheus (Laurence Fishburne), an elusive figure considered to be the most dangerous man alive, can answer his question -- What is the Matrix? Neo is contacted by Trinity (Carrie-Anne Moss), a beautiful stranger who leads him into an underworld where he meets Morpheus. They fight a brutal battle for their lives against a cadre of viciously intelligent secret agents. It is a truth that could cost Neo something more precious than his life. R (Sci-Fi Violence|Brief Language)
+ 
+certified-fresh Neo (Keanu Reeves) believes that Morpheus (Laurence Fishburne), an elusive figure considered to be the most dangerous man alive, can answer his question -- What is the Matrix? Neo is contacted by Trinity (Carrie-Anne Moss), a beautiful stranger who leads him into an underworld where he meets Morpheus. They fight a brutal battle for their lives against a cadre of viciously intelligent secret agents. It is a truth that could cost Neo something more precious than his life.  
 ['The Matrix does a good job of repackaging Baudrillard’s critique of hyperreality, as well as riffing on Christ, Marx, Lewis Carroll, and L. Frank Baum.', 'The Matrix still stands up as a fiercely exciting and discombobulating futurist drama, which pioneered breathtaking "bullet-time" action sequences inspired by Asian martial arts.', "Neo offers Reeves the perfect combination of Ted Theodore Logan's curiosity and wonder, Johnny Utah's earnestness and the badassedness of Jack Traven.", 'A technologically stunning movie that furthers the genre and features crowd-pleasing performances to go with the frequent scenes of gunplay and violence.', "Extremely violent, extremely preposterous, extremely entertaining, The Matrix succeeds at two extremely difficult tasks: as a vast, exciting virtual-reality movie and as a defibrillator for Keanu Reeves' big screen career."]
    movie_name tomatometer_score  ...                                           review_5   status
 0  The Matrix                88  ...  Extremely violent, extremely preposterous, ext...  Success
 
 [1 rows x 13 columns]
 Titanic
-[&lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="7c95bda7-d1ac-4e4e-93b2-ebdad2583b44")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="cb82dff5-e5b3-4c6d-81cb-738945b17bbe")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="82aadd1f-fdd3-4f8b-85f3-af6b6619683f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="e54f703f-490c-44f6-93ae-8a9000be74f3")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="58b66a68-7b44-48cd-ad99-f98e907705f5")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="dc090854-6e8d-4735-92d2-e40102b379ee")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="79ca2275-d06b-424a-b3e8-6f9f53b81f08")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="2b0c7808-22e8-4af3-a1f1-fc00ec00b682")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="a2cb4d75-6080-4040-9c91-6a9e58e1f827")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="2c3546db-5fa6-4976-ae16-f83c3a44505b")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="6710bf2c-b70c-4fde-9e9d-11a26a173788")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="b80c5404-20d4-40e9-a3d9-ef15f5bd83bb")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="be89b6ec-84bd-4a61-972c-6641ef1b0202")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="ab9387e5-9392-4691-8eef-a15e29900358")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="5ede8af0-a7ca-435e-bc09-1deb6da2d103")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="6a57ed38-b384-4cbf-8af7-382410d0cc7b")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="0af9d885-055a-4756-bbe8-601d1a9c88c7")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="99d2b8ee-05cb-4eea-aa69-59f873118bde")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="67272b89-d07c-4f4e-9871-dc41fe7ce96c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="147e354f-ad7e-45fb-aca7-e5c1bafe6572")&gt;]
+[&lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="a816e3e7-f554-43d3-9ff1-a03b15dfd546")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="8772d99c-1a7d-422d-a2b5-80beb910cc10")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="5f388dce-785c-4578-b66f-c3f0225eb65b")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="03082f9a-9a0f-453a-a58e-512fd69a950a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="a886f826-b02b-48a4-9c24-b1583fd793c6")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="5a24694c-e51a-422d-8cdb-843395b380a9")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="4ba1644e-5df4-4466-a0ee-6fbefd8c21cc")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="8259a6f7-5943-464b-a9fa-887ac1735a10")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="cc398de5-16d4-4db3-9323-26fdcf6912bc")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="b571c486-b2eb-4d76-a74f-4a35c7376c40")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="629d8446-71ff-4d5e-888e-394e54eb0c3f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="b732bc9e-6c7f-416f-a1ee-8757520f1c1b")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="0ce7f6ca-00ef-4520-92b9-c5738a0b1f3a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="f9720ebd-a17f-45b8-9302-5b709c09cb94")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="e9a5e7ba-0c82-48ae-9dd4-fbcbdc0a6f17")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="ce2d170d-c3ac-4b87-9915-0bf3d8bd7a3c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="c9ce7dee-f265-45da-95d9-462605f0ee2d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="c27c85de-eb85-4ef9-9754-9ac1cf9f1048")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="03d5130e-e266-4909-94ef-6116aeaf0034")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="b28458db-90c8-4d73-9692-b4874677101b")&gt;]
 
 
- The unsinkable R.M.S. Titanic departs Southampton on April 10, 1912, but never reaches its final destination. It sinks on April 15 after hitting an iceberg. Adventure, History, Drama
+d
+ The unsinkable R.M.S. Titanic departs Southampton on April 10, 1912, but never reaches its final destination. It sinks on April 15 after hitting an iceberg. d
 [None, None, None, None, None]
    movie_name tomatometer_score  ...                                           review_5   status
 0  The Matrix                88  ...  Extremely violent, extremely preposterous, ext...  Success
@@ -58,53 +49,103 @@ Titanic
 
 [2 rows x 13 columns]
 Jumanji
-[&lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="f5b9f9a9-541b-49e4-9673-8cb0e6884431")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="d04f2d85-661d-4ddf-b968-54931c0d339d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="c920c00d-0db1-440a-adaf-3b3c47687390")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="da34ae93-5373-4b71-a10d-08cbce6cfd2d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="d830867c-4be9-481b-8d8b-64294336e0bc")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="f7cfd0c0-0b19-45ab-9b71-8c732723e689")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="8020a904-ce2d-4d30-a9d2-0ac8f104b557")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="7b50043c-5710-4485-9045-005b245512fd")&gt;]
-52
-63
-rotten A magical board game unleashes a world of adventure on siblings Peter (Bradley Pierce) and Judy Shepherd (Kirsten Dunst). While exploring an old mansion, the youngsters find a curious, jungle-themed game called Jumanji in the attic. When they start playing, they free Alan Parrish (Robin Williams), who's been stuck in the game's inner world for decades. If they win Jumanji, the kids can free Alan for good -- but that means braving giant bugs, ill-mannered monkeys and even stampeding rhinos! PG
-["The technology both overwhelms the human cast and stalls the narrative drive. Even Williams's manic energy finally flags.", 'The humans are wooden, the computer-animals have that floating, jerky gait of animated fauna.', 'The filmmakers... re-create safari beasts with wizardly finesse but can’t think of anything to do with them but zap you.', 'What’s missing is a soul for this mechanical marvel.', 'Hollow, but very spectacular.']
-   movie_name tomatometer_score  ...                                           review_5   status
-0  The Matrix                88  ...  Extremely violent, extremely preposterous, ext...  Success
-1     Titanic                    ...                                               None  Success
-2     Jumanji                52  ...                      Hollow, but very spectacular.  Success
+[&lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="60d239ec-8465-4e96-9953-2f1e7f9d8674")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="341b3d1b-0beb-4297-873e-eb19d04ef702")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="2c2fcdc5-71f6-477d-9d21-35679d85bf27")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="6da67a41-6f5f-4c59-b492-92e388340ac4")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="9c631dec-08bf-4050-9672-900704e187d4")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="06318661-3d6c-4527-ac5f-4c6138ac56f6")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="bffca56e-22c8-40ee-ab22-a091343644d8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="a1878463e02753db512efdec6fe2b3de", element="74a8f33a-c04d-4ed7-a877-766ab07fb55c")&gt;]
+Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.165)
+Stacktrace:
+#0 0x55ac9ad95fe3 &lt;unknown&gt;
+#1 0x55ac9aad4d36 &lt;unknown&gt;
+#2 0x55ac9aaafb2c &lt;unknown&gt;
+#3 0x55ac9ab3783f &lt;unknown&gt;
+#4 0x55ac9ab4ac86 &lt;unknown&gt;
+#5 0x55ac9ab32693 &lt;unknown&gt;
+#6 0x55ac9ab0503a &lt;unknown&gt;
+#7 0x55ac9ab0617e &lt;unknown&gt;
+#8 0x55ac9ad57dbd &lt;unknown&gt;
+#9 0x55ac9ad5bc6c &lt;unknown&gt;
+#10 0x55ac9ad654b0 &lt;unknown&gt;
+#11 0x55ac9ad5cd63 &lt;unknown&gt;
+#12 0x55ac9ad2fc35 &lt;unknown&gt;
+#13 0x55ac9ad80138 &lt;unknown&gt;
+#14 0x55ac9ad802c7 &lt;unknown&gt;
+#15 0x55ac9ad8e093 &lt;unknown&gt;
+#16 0x7fa39b894b43 &lt;unknown&gt;
 
-[3 rows x 13 columns]
 The Night Train to Kathmandu
-[&lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="4cb856eb-c14f-4239-b6e1-93bccd71f4bf")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="e6802de5-d258-47f4-bf6c-082f74658612")&gt;]
+Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.165)
+Stacktrace:
+#0 0x55ac9ad95fe3 &lt;unknown&gt;
+#1 0x55ac9aad4d36 &lt;unknown&gt;
+#2 0x55ac9aaafb2c &lt;unknown&gt;
+#3 0x55ac9ab3783f &lt;unknown&gt;
+#4 0x55ac9ab4ac86 &lt;unknown&gt;
+#5 0x55ac9ab32693 &lt;unknown&gt;
+#6 0x55ac9ab0503a &lt;unknown&gt;
+#7 0x55ac9ab0617e &lt;unknown&gt;
+#8 0x55ac9ad57dbd &lt;unknown&gt;
+#9 0x55ac9ad5bc6c &lt;unknown&gt;
+#10 0x55ac9ad654b0 &lt;unknown&gt;
+#11 0x55ac9ad5cd63 &lt;unknown&gt;
+#12 0x55ac9ad2fc35 &lt;unknown&gt;
+#13 0x55ac9ad80138 &lt;unknown&gt;
+#14 0x55ac9ad802c7 &lt;unknown&gt;
+#15 0x55ac9ad8e093 &lt;unknown&gt;
+#16 0x7fa39b894b43 &lt;unknown&gt;
 
-60
- An American girl (Milla Jovovich) meets a prince (Eddie Castrodad) from a secret kingdom sought by a professor (Pernell Roberts) in Nepal. Adventure
-[None, None, None, None, None]
-                     movie_name tomatometer_score  ...                                           review_5   status
-0                    The Matrix                88  ...  Extremely violent, extremely preposterous, ext...  Success
-1                       Titanic                    ...                                               None  Success
-2                       Jumanji                52  ...                      Hollow, but very spectacular.  Success
-3  The Night Train to Kathmandu                    ...                                               None  Success
+skhgfkjs
+Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.165)
+Stacktrace:
+#0 0x55ac9ad95fe3 &lt;unknown&gt;
+#1 0x55ac9aad4d36 &lt;unknown&gt;
+#2 0x55ac9aaafb2c &lt;unknown&gt;
+#3 0x55ac9ab3783f &lt;unknown&gt;
+#4 0x55ac9ab4ac86 &lt;unknown&gt;
+#5 0x55ac9ab32693 &lt;unknown&gt;
+#6 0x55ac9ab0503a &lt;unknown&gt;
+#7 0x55ac9ab0617e &lt;unknown&gt;
+#8 0x55ac9ad57dbd &lt;unknown&gt;
+#9 0x55ac9ad5bc6c &lt;unknown&gt;
+#10 0x55ac9ad654b0 &lt;unknown&gt;
+#11 0x55ac9ad5cd63 &lt;unknown&gt;
+#12 0x55ac9ad2fc35 &lt;unknown&gt;
+#13 0x55ac9ad80138 &lt;unknown&gt;
+#14 0x55ac9ad802c7 &lt;unknown&gt;
+#15 0x55ac9ad8e093 &lt;unknown&gt;
+#16 0x7fa39b894b43 &lt;unknown&gt;
 
-[4 rows x 13 columns]
-Sta
-[&lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="5dc360ec-ed98-4418-8b71-ec6f830e0f82")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="0fdd421e-2e43-46ca-944f-6018c8d85d00")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="26a2edd2-9bbe-44f3-b1e5-8bf11043a09a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="61503975-e845-4386-96d0-8b0e774ee0a7")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="91ea4156-de56-4daf-a511-f3e8b9561483")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="7ccaa5f8-7aab-4f03-86d1-54aac1fcfacb")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="6f6edd8c-a1ab-40f8-9194-3fb1456bc45f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="ab066541-3544-48c7-9c97-995f11346223")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="456e0385-669f-4c1a-8291-c500c5268982")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="8e3695b9-e162-405d-acbd-62c4cb0778a7")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="598fc4e5-86f6-4aef-9011-41e770bf3047")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="8a923322-5b44-4861-9c2a-ca045a97b07d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="75b62497-fe49-46a6-9515-7a135b1cf26f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="0b365b7d-8188-49c2-bed1-e12cacad85ef")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="e7c84f17-ec38-4519-8ca3-9c54220926f3")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="086d2f23-daed-4464-8261-8acc832ba247")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="2f90cfd1-47fe-439d-a558-4251f6afddfd")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="90732db5-1acb-4cd2-8647-46eaa9e526ef")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="3a51e379-a205-46e1-bed9-21a6d1409151")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="5a8ca253-3054-4efe-87df-b733678621f4")&gt;]
 Beyond the Dream
-[&lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="783030d3-041a-4832-8bc1-8c6290e93774")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="cdb24a89-7e68-4f08-b417-9d304a41f840")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="16a4f01e-6b69-4b8c-9bd4-f9a5e54d28d9")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="46f807dd-0db3-4c05-8990-1834fbae9033")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="1d259693-d194-46b8-b5c7-08e437ba9fbd")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="48535198-f04c-49bb-aadc-bbbb561f093e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="2707075e-77d9-473a-9028-742a43aa9110")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="f3060188-f298-4072-ab4e-7e8cd3241e8e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="3f172fc1-14e5-4ceb-b127-47006c6ba1b0")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="0addf7eb-4705-42db-a346-b2485829b922")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="e119fa5d-3c94-41c2-9462-23374bb31b58")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="2ba5b7a8-ba41-4270-ad6d-3589f4219bc3")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="c669b6af-19ae-4995-850e-a000b59ceae8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="8addc260-2eca-4edd-a2f6-7782ddb9fc43")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="cf36e8cc-47db-4609-b874-f4ff8dbf3a6b")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="fb2582a8-ca16-4f90-bf9a-03c207186192")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="422c4fdc-d55c-4de9-b559-6d62e32c92a7")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="0d895864-a687-4fae-87a4-a4f2694991d0")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="306e8dba-c891-4253-9298-d3e69e8bd578")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="95e23f7e367d30dbd0caee43af61f04c", element="d541a854-140a-49a0-9b65-4952f77afef2")&gt;]
-
-
- The true story of two high school teachers who started a program to take students from El Paso on a journey to visit Ivy League schools in the east coast, to inspire them and help them realize what they can achieve. Documentary
-['There is a gem of inspiration at the film’s core, but the slow pacing and lack of story undermine it.', 'Beyond the Dream is a lovely depiction of something very real and mostly unheard of. Sure, inspirational stories like these are common but they don’t necessarily have happy endings. This one does and it will lift you up.', 'A great reminder that there are opportunities out there for future students who may not know where to start their college path.', None, None]
-                     movie_name tomatometer_score  ...                                           review_5                status
-0                    The Matrix                88  ...  Extremely violent, extremely preposterous, ext...               Success
-1                       Titanic                    ...                                               None               Success
-2                       Jumanji                52  ...                      Hollow, but very spectacular.               Success
-3  The Night Train to Kathmandu                    ...                                               None               Success
-4                           Sta               NaN  ...                                                NaN  No Exact match Found
-5              Beyond the Dream                    ...                                               None               Success
-
-[6 rows x 13 columns]</msg>
-<status status="PASS" starttime="20230514 07:23:13.325" endtime="20230514 07:25:59.550"/>
+Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.165)
+Stacktrace:
+#0 0x55ac9ad95fe3 &lt;unknown&gt;
+#1 0x55ac9aad4d36 &lt;unknown&gt;
+#2 0x55ac9aaafb2c &lt;unknown&gt;
+#3 0x55ac9ab3783f &lt;unknown&gt;
+#4 0x55ac9ab4ac86 &lt;unknown&gt;
+#5 0x55ac9ab32693 &lt;unknown&gt;
+#6 0x55ac9ab0503a &lt;unknown&gt;
+#7 0x55ac9ab0617e &lt;unknown&gt;
+#8 0x55ac9ad57dbd &lt;unknown&gt;
+#9 0x55ac9ad5bc6c &lt;unknown&gt;
+#10 0x55ac9ad654b0 &lt;unknown&gt;
+#11 0x55ac9ad5cd63 &lt;unknown&gt;
+#12 0x55ac9ad2fc35 &lt;unknown&gt;
+#13 0x55ac9ad80138 &lt;unknown&gt;
+#14 0x55ac9ad802c7 &lt;unknown&gt;
+#15 0x55ac9ad8e093 &lt;unknown&gt;
+#16 0x7fa39b894b43 &lt;unknown&gt;</msg>
+<status status="PASS" starttime="20230516 09:52:40.721" endtime="20230516 09:53:09.527"/>
 </kw>
-<status status="PASS" starttime="20230514 07:23:13.323" endtime="20230514 07:25:59.569"/>
+<status status="PASS" starttime="20230516 09:52:40.719" endtime="20230516 09:53:09.530"/>
 </test>
 <doc>Template robot main suite.</doc>
-<status status="PASS" starttime="20230514 07:23:10.608" endtime="20230514 07:25:59.573"/>
+<status status="PASS" starttime="20230516 09:52:36.779" endtime="20230516 09:53:09.532"/>
 </suite>
 <statistics>
 <total>

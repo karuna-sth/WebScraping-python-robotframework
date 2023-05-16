@@ -4,25 +4,22 @@ This module provides funcitonality to connect to database
 
 import sqlite3
 import pandas as pd
-import constants
+import app.constants as constants
 
 
 class DatabaseOperation:
     """Connects to a database"""
 
-    def __init__(self, data) -> None:
+    def __init__(self) -> None:
         self.conn = None
         self.cursor = None
         self.database = constants.DATABASE
-        self.data = data
-
-    def connect_to_db(self) -> None:
-        """connects to db"""
         try:
             self.conn = sqlite3.connect(self.database)
             self.cursor = self.conn.cursor()
         except sqlite3.Error as ex:
             print(ex)
+        self.create_table()
 
     def close_connection(self) -> None:
         """closes connection"""
@@ -63,13 +60,3 @@ class DatabaseOperation:
         """
         data.to_sql("Movies", self.conn, if_exists="append", index=False)
 
-    def perform_op(self) -> None:
-        """perform databse operation CREATE UPDATE INSERT and DELETE ONLY
-
-        Args:
-            data (dataframe): data frame to inserted
-        """
-        self.connect_to_db()
-        self.create_table()
-        self.insert_to_database(self.data)
-        self.close_connection()

@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation       Template robot main suite.
-Library    app.py
+Library    main.py
 
 *** Tasks ***
 Minimal task
